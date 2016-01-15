@@ -33,7 +33,9 @@
             <h2> {{movie.name|toTitle}} </h2>
             <img class="img img-thumbnail" ng-src="{{movie.img}}">
             <hr/>
-            <a ng-href="{{downloadUrl}}" class="btn btn-danger"> Download now </a>
+            <div style="margin: 20px">
+                <a ng-href="{{downloadUrl}}" class="btn btn-danger"> Download now </a>
+            </div>
         </div>
     </div>
 </div>
