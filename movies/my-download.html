@@ -2,11 +2,11 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>Babulmovies : Download HD movies</title>
+    <title>0000 | Download | Babulmovies : Download HD movies</title>
     <meta name="keywords"
           content="watch and download full hindi movie, telugu movie, english movie, oriya movie, tamil movie, download mp3, download video song , movies 2016, movies 2015, 2014, 2000, 1990, Bollywood, Hollywood, Animation, tollywood, ollywood, download, watch, trailer, mp3, video song"/>
     <meta name="description"
-          content="Watch and download full movies from this site. Download full hindi movie. Download full HD movies direct, here you can find lots of hindi, english, punjabi, bhojpuri, sambalpuri, kannada, bengali, malayalam, chinies, korean, Oriya, Telugu, tamil movies to wach and download. This site is completely free for the user. You can find movie songs available here, here you can download mp3 songs, Everything related to movie available here"/>
+          content="Watch and download 0000 full movies from this site. Download full hindi movie. Download full HD movies direct, here you can find lots of hindi, english, punjabi, bhojpuri, sambalpuri, kannada, bengali, malayalam, chinies, korean, Oriya, Telugu, tamil movies to wach and download. This site is completely free for the user. You can find movie songs available here, here you can download mp3 songs, Everything related to movie available here"/>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
@@ -27,18 +27,15 @@
     </div>
 </div>
 
-<div class="container-fluid" ng-controller="IndexController">
+<div class="container-fluid" ng-controller="DownloadController">
     <div class="row">
         <div class="col-md-12">
-            <h3> Recent Movies</h3>
-
-            <div class="list-group">
-                <a ng-href="/movies/{{movie.name}}.html" class="list-group-item" ng-repeat="movie in movies">{{movie.name|toTitle}}</a>
-            </div>
+            <h2> {{movie.name|toTitle}} </h2>
+            <img class="img img-thumbnail" ng-src="{{movie.img}}">
+            <hr/>
+            <a ng-href="{{downloadUrl}}" class="btn btn-danger"> Download now </a>
         </div>
     </div>
-
-
 </div>
 
 <footer class="footer">
@@ -46,11 +43,12 @@
         <div class="row">
             <div class="col-md-12">
                 <p style="font-size: 10px">Babulmovies does not publish or host the videos that are linked or displayed
-                    on Babulmovies and have no way of controlling the publishers or the servers on which the videos are
-                    hosted. Thus, if you want a piece of content removed from circulation, the best way to do that is to
-                    contact the website that hosts the video, not us. After you have seen the low quality videos here,
-                    We highly ENCOURAGE you to buy the DVD or cassettes from your local or online video store. Please
-                    contact support@Babulmovies.com if you need help finding a local store.</p>
+                    on Babulmovies and have
+                    no way of controlling the publishers or the servers on which the videos are hosted. Thus, if you
+                    want a piece of content removed from circulation, the best way to do that is to contact the website
+                    that hosts the video, not us. After you have seen the low quality videos here, We highly ENCOURAGE
+                    you to buy the DVD or cassettes from your local or online video store. Please contact
+                    support@Babulmovies.com if you need help finding a local store.</p>
             </div>
         </div>
     </div>
