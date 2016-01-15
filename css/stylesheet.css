@@ -28,3 +28,13 @@ body {
     margin: 0px
 }
 
+.my-page-header a {
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.my-page-header a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+

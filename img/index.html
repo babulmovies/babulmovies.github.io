@@ -22,7 +22,7 @@
 <body ng-app="BabulmoviesApp">
 <div class="row my-page-header">
     <div class="col-md-12">
-        <a href="/"><h1>Babulmovies</h1></a>
+        <a href="/" target="_self"><h1>Babulmovies</h1></a>
         <h5>HD Indian Movies Mania for low file size</h5>
     </div>
 </div>
@@ -30,15 +30,14 @@
 <div class="container-fluid" ng-controller="IndexController">
     <div class="row">
         <div class="col-md-12">
-            <h3> Recent Movies</h3>
-
-            <div class="list-group">
-                <a ng-href="/movies/{{movie.name}}.html" class="list-group-item" ng-repeat="movie in movies">{{movie.name|toTitle}}</a>
+            <div class="jumbotron" style="margin-top: 15px">
+                <h1> OOPS! No Movies found here </h1>
+                <p>You can find movies @ home page</p>
+                <a ng-href="/" class="btn btn-primary"> Go to Home</a>
             </div>
+
         </div>
     </div>
-
-
 </div>
 
 <footer class="footer">
