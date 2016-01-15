@@ -20,6 +20,9 @@
     <script src="/vendor/angularjs/angular-resource.min.js"></script>
 </head>
 <body ng-app="BabulmoviesApp">
+
+<div ng-include="'/movies/my-header.html'"></div>
+
 <div class="row my-page-header">
     <div class="col-md-12">
         <a href="/" target="_self"><h1>Babulmovies</h1></a>
@@ -44,6 +47,7 @@
     </div>
 </footer>
 
+<div ng-include="'/movies/my-footer.html'"></div>
 
 <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
