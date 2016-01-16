@@ -1,0 +1,45 @@
+<div class="container-fluid" ng-controller="MovieController">
+    <div class="row">
+        <div class="col-md-12">
+            <h2> {{movie.name | toTitle}} </h2>
+            <img style="height: 180px" class="img img-thumbnail" ng-src="{{movie.img}}">
+            <hr/>
+
+            <div ng-if="hasTrailer()">
+                <h4>Watch Trailer Now :</h4>
+                <hr/>
+                <div class="list-group">
+                    <a ng-href="{{t}}" target="_self" class="list-group-item" ng-repeat="t in movie.trailer">
+                        <i class="fa fa-film"></i>
+                        Trailer : link {{$index + 1}}
+                    </a>
+                </div>
+            </div>
+
+            <div ng-if="hasWatch()">
+                <h4>Watch Movie Online :</h4>
+                <hr/>
+                <div class="list-group">
+                    <a ng-href="{{w}}" target="_self" class="list-group-item" ng-repeat="w in movie.watch">
+                        <i class="fa fa-play-circle"></i>
+                        Play : link {{$index + 1}}
+                    </a>
+                </div>
+            </div>
+
+            <div ng-if="hasDownload()">
+                <h4>Download movie :</h4>
+                <hr/>
+                <div class="list-group">
+                    <a ng-href="/movies/my-download.html?id={{movieId}}&url={{d}}" target="_self"
+                       class="list-group-item active" ng-repeat="d in movie.download">
+                        <i class="fa fa-download"></i>
+                        Download movie : link {{$index + 1}}
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

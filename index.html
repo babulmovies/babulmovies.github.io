@@ -20,12 +20,8 @@
     <script src="/vendor/angularjs/angular-resource.min.js"></script>
 </head>
 <body ng-app="BabulmoviesApp">
-<div class="row my-page-header">
-    <div class="col-md-12">
-        <a href="/"><h1>Babulmovies</h1></a>
-        <h5>HD Indian Movies Mania for low file size</h5>
-    </div>
-</div>
+
+<div ng-include="'/views/my-header.html'"></div>
 
 <div class="container-fluid" ng-controller="IndexController">
     <div class="row">
@@ -37,25 +33,9 @@
             </div>
         </div>
     </div>
-
-
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p style="font-size: 10px">Babulmovies does not publish or host the videos that are linked or displayed
-                    on Babulmovies and have no way of controlling the publishers or the servers on which the videos are
-                    hosted. Thus, if you want a piece of content removed from circulation, the best way to do that is to
-                    contact the website that hosts the video, not us. After you have seen the low quality videos here,
-                    We highly ENCOURAGE you to buy the DVD or cassettes from your local or online video store. Please
-                    contact support@Babulmovies.com if you need help finding a local store.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
+<div ng-include="'/views/my-footer.html'"></div>
 
 <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
