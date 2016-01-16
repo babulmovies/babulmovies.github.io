@@ -30,7 +30,7 @@
             <h3> Recent Movies</h3>
 
             <div class="list-group">
-                <a ng-href="/movies/{{movie.name}}.html" class="list-group-item" ng-repeat="movie in movies">{{movie.name|toTitle}}</a>
+                <a target="_self" ng-href="/movies/{{movie.name}}.html" class="list-group-item" ng-repeat="movie in movies">{{movie.name|toTitle}}</a>
             </div>
         </div>
     </div>
